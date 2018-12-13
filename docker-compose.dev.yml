@@ -6,4 +6,4 @@ services:
     ports:
       - "127.0.0.1:8080:8080"
     volumes:
-      - ./dev:/usr/src/webpack-demo/src
+      - ./webpack:/usr/src/webpack-demo/src
