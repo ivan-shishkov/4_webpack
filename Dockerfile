@@ -13,3 +13,5 @@ RUN npm install
 RUN mkdir src
 
 COPY ./prod ./src
+
+RUN npm run build
