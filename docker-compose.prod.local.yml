@@ -1,0 +1,9 @@
+version: "3"
+services:
+  webpack:
+    build: .
+    command: ["npm", "run", "build"]
+    volumes:
+      - ./prod/webpack.config.js:/usr/src/webpack-demo/src/webpack.config.js
+      - ./prod/src:/usr/src/webpack-demo/src/src
+      - ./dist:/usr/src/webpack-demo/src/dist
