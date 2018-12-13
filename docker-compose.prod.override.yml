@@ -1,0 +1,5 @@
+version: "3"
+services:
+  webpack:
+    volumes:
+      - ./dist:/usr/src/webpack-demo/src/nginx_folder

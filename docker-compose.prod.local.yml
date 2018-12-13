@@ -1,8 +1,0 @@
-version: "3"
-services:
-  webpack:
-    build: .
-    volumes:
-      - ./prod/webpack.config.js:/usr/src/webpack-demo/src/webpack.config.js
-      - ./prod/src:/usr/src/webpack-demo/src/src
-      - ./dist:/usr/src/webpack-demo/src/dist
