@@ -34,7 +34,7 @@ $ cd 4_webpack/
 
 ```bash
 
-$ sudo docker-compose -f docker-compose.dev.yml up
+$ sudo docker-compose up
 
 ```
 
@@ -44,7 +44,7 @@ $ sudo docker-compose -f docker-compose.dev.yml up
 
 ```bash
 
-$ sudo docker-compose -f docker-compose.dev.yml down
+$ sudo docker-compose down
 
 ```
 
