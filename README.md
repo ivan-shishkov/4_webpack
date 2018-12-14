@@ -1,6 +1,6 @@
 # Webpack внутри Docker
 
-Данное решение позволяет запустить [Webpack](https://webpack.js.org/) внутри Docker контейнера как на локальной машине (в режимах development и production), так и на удалённом сервере (в режиме production).
+Данное решение позволяет запустить [Webpack](https://webpack.js.org/) внутри Docker контейнера как на локальной машине (в режиме development), так и на удалённом сервере (в режиме production).
 
 ## Рабочее окружение
 
@@ -28,9 +28,7 @@ $ cd 4_webpack/
 
 ```
 
-## Запуск на локальной машине
-
-### Запуск в development режиме
+## Запуск на локальной машине в development режиме
 
 Запуск development-сервера с функцией live reload выполняется с помощью команды:
 
@@ -49,19 +47,6 @@ $ sudo docker-compose -f docker-compose.dev.yml up
 $ sudo docker-compose -f docker-compose.dev.yml down
 
 ```
-
-### Запуск в production режиме
-
-Перед запуском необходимо скопировать все исходные файлы в директорию **prod/src**. Затем необходимо выполнить команду:
-
-```bash
-
-$ sudo docker-compose -f docker-compose.prod.yml -f docker-compose.prod.override.yml up --build
-
-```
-
-Результирующий файл **bundle.js** будет сохранён в директории **dist**.
-
 
 ## Запуск на удалённом сервере
 
