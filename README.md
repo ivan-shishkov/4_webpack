@@ -58,13 +58,7 @@ $ sudo docker-compose down
 
 ### Установка Docker на удалённый сервер
 
-Для установки Docker на удалённый сервер необходимо выполнить команду:
-
-```bash
-
-$ docker-machine create --driver generic --generic-ip-address=123.123.123.123 --generic-ssh-port 22222 --generic-ssh-user user --generic-engine-port 33333  --generic-ssh-key ~/.ssh/id_rsa docker-webpack-host
-
-```
+Установка Docker на удалённый сервер производится в соответствии с [руководством](https://community.vscale.io/hc/ru/community/posts/115002400569-%D0%9A%D0%B0%D0%BA-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80-%D0%BD%D0%B0-%D1%83%D0%B4%D0%B0%D0%BB%D1%91%D0%BD%D0%BD%D0%BE%D0%BC-%D1%85%D0%BE%D1%81%D1%82%D0%B5-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-Docker-Machine).
 
 ### Запуск в production режиме
 
@@ -74,7 +68,7 @@ $ docker-machine create --driver generic --generic-ip-address=123.123.123.123 --
 
 ```bash
 
-$ eval $(docker-machine env docker-webpack-host)
+$ eval $(docker-machine env имя_хоста)
 
 ```
 
