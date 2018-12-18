@@ -1,6 +1,6 @@
 version: "3"
 services:
-  webpack:
+  webpack-demo:
     build: .
     command: ["cp", "src/dist/bundle.js", "src/nginx_folder"]
     volumes:
