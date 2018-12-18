@@ -14,6 +14,4 @@ RUN mkdir src
 
 COPY ./prod ./src
 
-RUN mkdir src/nginx_folder
-
 RUN npm run build
